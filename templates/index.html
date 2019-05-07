@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+        form {
+            background-color: #eee;
+            padding: 20px;
+            margin: 0 auto;
+            width: 540px;
+            font: 16px sans-serif;
+            border-radius: 10px;
+        }
+
+        textarea {
+            margin: 10px 0;
+            width: 540px;
+            height: 120px;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="/encryptedtext" method="post">
+            <label for="rot">Rotate by:</label>
+            <input type="text" name="rot" />
+            <textarea name="text">{{encrypted_string}}</textarea>
+            <input type="submit"/>
+            </form>
+        </ul>
+    </body>
+</html>
